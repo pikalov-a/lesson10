@@ -1,8 +1,6 @@
 # Создание потоков#module_10_1.py
 ##Задача "Потоковая запись в файлы":
 import threading
-#from time import sleep
-#from time import time
 import time
 import threading
 def write_words(word_count, file_name):
@@ -35,4 +33,3 @@ thread7.join()
 thread8.join()
 ktime=time.time()
 print(f'Работа потоков {ktime-ntime}')
-##xn=my_file.tell()
