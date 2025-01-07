@@ -1,6 +1,5 @@
 # Потоки на классах#module_10_2.py
 ##Задача "За честь и отвагу!":
-import threading
 import time
 import threading
 class Knight(threading.Thread):
@@ -23,8 +22,6 @@ class Knight(threading.Thread):
         self.war(self.name,self.power)
 first_knight = Knight('Sir Lancelot', 10)
 second_knight = Knight("Sir Galahad", 20)
-#thread1=threading.Thread(target=first_knight)
-#thread2=threading.Thread(target=second_knight)
 first_knight.start()
 second_knight.start()
 first_knight.join()
